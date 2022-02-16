@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pLeft{
+    margin-top: 80px;
+    margin-left: 40px;
+    width:40vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    
+   
+}
+
+.pLeft > form{
+ height: 50vh;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ align-items: center;
+ align-content: center;
+}
+
+form > input{
+    width: 35vw;
+}
+
+.pLeft > form > label{
+    color: #f5f2ec;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.pRight{
+    width: 49vw;
+    height: 49vh;
+    }
+
+.form2{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.form2 span{
+    margin-left: -100px;
+}
