@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleP.css">
+   <script src='package/dist/chart.js'></script> 
+ 
+</head>
+<body>
+    <main class="gap5 grid grid-cols-2 bg-gray-50">
+        <div class="pLeft bg-cyan-600 opacity-35 flex flex-col ">
+            <form id='fmList' class=" flex flex-col justify-between">
+                <label>Quantidade de arroz comprado ao mês ta</label>
+                
+                <input type="number" name="quantidade" id="quant">
+                
+                <label>Mês de compra</label>
+               
+                <input list="meses"  name='listMeses'>
+                <datalist id="meses">
+                    <option value="Jan"></option>
+                    <option value="Fev"></option>
+                    <option value="Março"></option>
+                    <option value="Abril"></option>
+                    <option value="Maio"></option>
+                </datalist>
+
+                <button type="submit" id="bt" onclick="enviar()" class="bg-white w-40 h-10 rounded-full" >Enviar</button>
+                <button onclick="atualizar()" class="bg-white w-40 h-10 rounded-full">atualizar</button>
+            </form>    
+        </div>
+
+        <div class="pRigth ">
+            <div>
+                <h2>modelo de gráfico</h2>
+               <form action="" class="flex flex-row form2">
+                   <input type="checkbox" name="barra" id="chkBox"><span>Barra</span>
+                   <input type="checkbox" name="pizza" id="chkBoxPizza"><span>Pizza</span>
+                   <input type="checkbox" name="Line" id="chkBoxLinha"><span>Line</span>
+
+
+               </form>
+            </div>
+            <canvas id="myChart" style="position: relative; height:50vh; width:40vw"></canvas>
+        </div> 
+
+    </main>
+
+  <script src='index.js'></script>
+
+</body>
+</html>
